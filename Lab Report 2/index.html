@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation Example</title>
+  <style>
+    body { 
+      font-family: 'Times New Roman', Times, serif; 
+      margin: 20px; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      min-height: 100vh; 
+      text-align: center;  
+    }
+    form { 
+        width: 300px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; 
+    }
+    input { 
+        display: block; width: 95%; margin: 10px 0; padding: 8px; 
+    }
+    .error { 
+        color: red; font-size: 14px; 
+    }
+    .success { 
+        color: green; font-size: 14px; 
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Registration Form</h2>
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="email" id="email" placeholder="Enter your email">
+    <input type="password" id="password" placeholder="Enter your password"><br>
+    <button type="submit">Submit</button>
+    <p id="message"></p>
+  </form>
+
+  <!-- Linking External JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
